@@ -139,6 +139,7 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
+    transition: 250ms;
 }
 
 .site-nav .link.current {
@@ -176,6 +177,7 @@ ul {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
+    transition: 250ms;
 }
 
 
@@ -244,6 +246,38 @@ ul {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0 solid transparent;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 528px;
+    height: 581px;
+    padding: 15px;
+    background: var(--primery-white-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    /* + кнопка закрыть */
 }
 
 /* наши возможности */
@@ -503,6 +537,7 @@ img {
 .team-link:focus{
   background-color: var(--accent-color);
   color: var(--primery-white-color);
+  transition: 250ms;
   
 }
 
@@ -570,6 +605,7 @@ img {
 .customer-link:focus {
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
+    transition: 250ms;
 }
 
 .customer-icon {
@@ -600,10 +636,6 @@ img {
     margin-bottom: 20px;
 }
 
-.info {
-    /* display: flex; */
-}
-
 .auth-nav-footer .contacts-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -615,6 +647,7 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
+    transition: 250ms;
 }
 
 .address {
@@ -674,6 +707,7 @@ img {
 .network-link:focus {
     background-color: var(--accent-color);
     color: var(--primery-white-color);
+    transition: 250ms;
 }
 
 .link-icon {
