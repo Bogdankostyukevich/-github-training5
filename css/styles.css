@@ -96,7 +96,7 @@ ul {
     position: relative;
 }
 
-.site-nav .link::after {
+.site-nav .current::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -139,7 +139,6 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
-    transition: 250ms;
 }
 
 .site-nav .link.current {
@@ -177,7 +176,6 @@ ul {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
-    transition: 250ms;
 }
 
 
@@ -605,7 +603,6 @@ img {
 .customer-link:focus {
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
-    transition: 250ms;
 }
 
 .customer-icon {
@@ -647,7 +644,6 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
-    transition: 250ms;
 }
 
 .address {
@@ -707,7 +703,6 @@ img {
 .network-link:focus {
     background-color: var(--accent-color);
     color: var(--primery-white-color);
-    transition: 250ms;
 }
 
 .link-icon {
