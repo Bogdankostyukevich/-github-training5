@@ -178,7 +178,6 @@ ul {
     color: var(--accent-color);
 }
 
-
 .envelope,
 .smartphone {
     fill: currentColor;
@@ -263,7 +262,9 @@ ul {
     pointer-events: none;
 }
 
-.backdrop.is-hidden .modal
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+}
 
 .modal {
     position: absolute;
@@ -278,8 +279,31 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    transform: translate(-50%, -50%);
-    overflow: scroll;
+    /* overflow: scroll; */
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close {
+    position: absolute;
+    list-style: none;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: var(--primery-white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    fill: var(--accent-color);
 }
 
 /* наши возможности */
@@ -539,7 +563,6 @@ img {
 .team-link:focus{
   background-color: var(--accent-color);
   color: var(--primery-white-color);
-  transition: 250ms;
   
 }
 

@@ -47,11 +47,17 @@
             <div class="background-hero container">
                  <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="button">Заказать услугу</button>
+
+                <!-- модальное окно -->
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium facere doloribus, et quibusdam, odit, nam officia praesentium amet harum similique accusantium! Nobis amet error, impedit nemo dolore deserunt distinctio,</p>
-                    <button data-modal-close>закрыть</button>
+                    <button class="modal-close" data-modal-close>
+                        <svg class="icon-close" width="20" height="20">
+                            <use href="./images/close1.svg#icon-close"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
